@@ -708,7 +708,7 @@ int hid_read_timeout(hid_device *dev, unsigned char *data, size_t length, int mi
 
 end_of_function:
     if (!res) {
-        register_error(dev, "GetOverlappedResult");
+        // register_error(dev, "GetOverlappedResult");
         return -1;
     }
 
